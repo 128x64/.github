@@ -280,32 +280,53 @@ The best way to follow our work is through our public GitHub organization.
 - **Direct Contact:** [Email](mailto:raphaelcvarghese@gmail.com)
 
 For project-specific questions, feedback, or contribution information, use the communication channels listed in the relevant repository.
-## Leaders
-> 1. [Raphael Varghese](https://github.com/Raphael-Varghese)
-> > Owner  
-> > Shareholder   
-> > Cofounder  
-> > CoLeader of x64.AI
-> > CoLeader of 128x64 Hosting
-> > Leader of 128x Gaming
-> > Department of Cybersecurity  
-> > Department of AI Fine-Tuning  
-> > Coowner of Department of AI Inferencing  
-> > Coowner of Department of AI Research  
-> > Coowner of Department of AI Training  
->
-> 2. [Sai Peddada](https://github.com/Ihaterbrrjdn)
-> > Shareholder    
-> > Cofounder  
-> > CoLeader of x64.AI
-> > Coowner of Department of AI Research  
-> > Coowner of Department of AI Training  
->
-> 3. Atharvo Rai
-> > Shareholder    
-> > Cofounder  
-> > CoLeader of x64.AI
-> > CoLeader of 128x64 Hosting
-> > Coowner of Department of AI Inferencing  
+## 👥 Leaders
+
+<table>
+  <tr>
+    <!-- PROFILE CARD 1 -->
+    <td width="33%" valign="top">
+      <img src="https://github.com" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
+      <h3 align="center"><a href="https://github.com/Raphael-Varghese">Raphael Varghese</a></h3>
+      <p align="center"><strong>Owner · Shareholder · Cofounder</strong></p>
+      <hr>
+      <ul>
+        <li>CoLeader of x64.AI</li>
+        <li>CoLeader of 128x64 Hosting</li>
+        <li>Leader of 128x Gaming</li>
+        <li>Department of Cybersecurity</li>
+        <li>Department of AI Fine-Tuning</li>
+        <li>Coowner of Department of AI Inferencing</li>
+        <li>Coowner of Department of AI Research</li>
+        <li>Coowner of Department of AI Training</li>
+      </ul>
+    </td>
+    <!-- PROFILE CARD 2 -->
+    <td width="33%" valign="top">
+      <img src="https://github.com" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
+      <p align="center"><strong>Shareholder · Cofounder</strong></p>
+      <hr>
+      <ul>
+        <li>CoLeader of x64.AI</li>
+        <li>Coowner of Department of AI Research</li>
+        <li>Coowner of Department of AI Training</li>
+      </ul>
+    </td>
+    <!-- PROFILE CARD 3 -->
+    <td width="33%" valign="top">
+      <img src="https://placeholders.dev" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharvo Rai">
+      <h3 align="center">Atharvo Rai</h3>
+      <p align="center"><strong>Shareholder · Cofounder</strong></p>
+      <hr>
+      <ul>
+        <li>CoLeader of x64.AI</li>
+        <li>CoLeader of 128x64 Hosting</li>
+        <li>Coowner of Department of AI Inferencing</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 
 <sub>© 128x64 · All rights reserved where applicable. Individual projects may be distributed under their own licenses.</sub>
