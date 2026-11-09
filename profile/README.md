@@ -119,7 +119,7 @@ We aim to:
 ### x64.AI
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128xCLOUD.png" width="160" alt="x64.AI Placeholder Icon">
+  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/x64AI.png" width="160" alt="x64.AI Placeholder Icon">
 </p>
 
 #### Artificial Intelligence · Research · Intelligent Software
@@ -149,7 +149,7 @@ Learn more through the organization's public repositories as projects become ava
 ### 128x CLOUD
 
 <p align="center">
-  <img src="https://placehold.co/96x96/111827/06b6d4?text=CLOUD" width="88" alt="128x CLOUD Placeholder Icon">
+  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128xCLOUD.png" width="160" alt="128x CLOUD Placeholder Icon">
 </p>
 
 #### Web Hosting · Cloud Infrastructure · Developer Services
@@ -179,7 +179,7 @@ Service availability, supported features, and operational commitments will be do
 ### 128x PLAY
 
 <p align="center">
-  <img src="https://placehold.co/96x96/111827/3b82f6?text=PLAY" width="88" alt="128x PLAY Placeholder Icon">
+  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128xPLAY.png" width="160" alt="128x PLAY Placeholder Icon">
 </p>
 
 #### Games · Interactive Experiences · Gaming Technology
