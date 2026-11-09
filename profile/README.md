@@ -119,7 +119,7 @@ We aim to:
 ### x64.AI
 
 <p align="center">
-  <img src="https://placehold.co/96x96/111827/a855f7?text=AI" width="88" alt="x64.AI Placeholder Icon">
+  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128xCLOUD.png" width="88" alt="x64.AI Placeholder Icon">
 </p>
 
 #### Artificial Intelligence · Research · Intelligent Software
