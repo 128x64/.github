@@ -1,50 +1,115 @@
-name: Apply Default Custom License
+name: Apply 128x64 Organization License Policy
 
 on:
-  create:
+  # Run manually while the GitHub App is being configured.
+  # Add a 15-minute schedule after LICENSE_BOT_APP_ID and
+  # LICENSE_BOT_PRIVATE_KEY have been added as repository secrets.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: organization-license-policy
+  cancel-in-progress: false
 
 jobs:
   apply-license:
     runs-on: ubuntu-latest
-    if: github.event.repository.name != '.github'
     steps:
-      - name: Checkout newly created repository
+      - name: Check out the central policy repository
         uses: actions/checkout@v4
+
+      - name: Create an organization-scoped GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v2
         with:
-          repository: ${{ github.repository }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          app-id: ${{ secrets.LICENSE_BOT_APP_ID }}
+          private-key: ${{ secrets.LICENSE_BOT_PRIVATE_KEY }}
+          owner: 128x64
+          permission-contents: write
 
-      - name: Create Custom LICENSE file
+      - name: Apply visibility-based licenses without overwriting
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        shell: bash
         run: |
-          cat << 'EOF' > LICENSE.md
-          # Proprietary Commercial Use and Licensing Agreement
-          Copyright (c) 2026 128x64. All rights reserved.
-          
-          This repository, including all software, source code, assets, and associated documentation files (collectively, the "Software"), is proprietary, strictly confidential, and the exclusive property of OmniCompute.
-          
-          ### 1. GRANT OF LICENSE
-          Subject to the terms and conditions of this Agreement, permission and a non-exclusive, non-transferable license to view, use, copy, modify, merge, or compile the Software is granted **SOLELY AND EXCLUSIVELY** to:
-          * **128x64, Inc.**
-          * **128x64 Hosting, Inc.**
-          * **x64.AI, Inc.**
-          * **128x Gaming, Inc.**
-          * **Wholly-owned subsidiaries of 128x64, Inc.**
-          
-          ### 2. STRICT RESTRICTIONS
-          Any use, copying, modification, merging, publication, distribution, sublicensing, reverse engineering, or selling of the Software by any other individual, corporation, organization, or external entity is **strictly prohibited**.
-          * **No Public Use:** This Software may not be used for any personal, commercial, or non-commercial projects outside of OmniCompute authorized operations.
-          * **No Third-Party Distribution:** You may not redistribute, fork for public access, or expose this source code to any third party.
-          * **Unauthorized Access:** If you are not an authorized employee, contractor, or affiliate of OmniCompute or its subsidiaries, you must immediately destroy all copies of the Software in your possession.
-          * **For Access:** Please email the owner at `raphaelcvarghese@gmail.com` with name, company, and reason for using.
-          
-          ### 3. NO WARRANTY
-          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-          EOF
+          set -euo pipefail
 
-      - name: Commit and Push License
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add LICENSE.md
-          git commit -m "Fix LICENSE. Changeable if needed."
-          git push origin HEAD:${{ github.event.repository.default_branch }}
+          summary="$GITHUB_STEP_SUMMARY"
+          echo "## 128x64 license policy scan" >> "$summary"
+          echo "" >> "$summary"
+          echo "Existing license files are never overwritten. Forks and archived repositories are skipped." >> "$summary"
+          echo "" >> "$summary"
+
+          repos="$(gh api --paginate 'orgs/128x64/repos?per_page=100&type=all' \
+            --jq '.[] | [.full_name, .visibility, (.fork|tostring), (.archived|tostring), .default_branch] | @tsv')"
+
+          if [[ -z "$repos" ]]; then
+            echo "No repositories were returned. Check that the GitHub App is installed across the organization." >> "$summary"
+            exit 0
+          fi
+
+          while IFS=$'\t' read -r repo visibility is_fork is_archived default_branch; do
+            [[ -n "$repo" ]] || continue
+
+            if [[ "$repo" == "128x64/.github" ]]; then
+              continue
+            fi
+
+            if [[ "$is_fork" == "true" || "$is_archived" == "true" ]]; then
+              echo "- Skipped **$repo** (fork or archived repository)." >> "$summary"
+              continue
+            fi
+
+            if [[ -z "$default_branch" ]]; then
+              echo "- Skipped **$repo** (no default branch yet)." >> "$summary"
+              continue
+            fi
+
+            if [[ "$visibility" == "public" ]]; then
+              license_source="licenses/Public_LICENSE.md"
+              license_label="Public"
+            else
+              # Private and GitHub Enterprise internal repositories use the restricted license.
+              license_source="licenses/Internal_LICENSE.md"
+              license_label="Internal"
+            fi
+
+            existing_path=""
+            inspection_failed="false"
+
+            for candidate in LICENSE LICENSE.md LICENSE.txt COPYING COPYING.md; do
+              endpoint="repos/$repo/contents/$candidate"
+              first_line="$(gh api --include "$endpoint" 2>/dev/null | sed -n '1p' || true)"
+              status_code="$(sed -E 's#^HTTP/[0-9.]+ ([0-9]{3}).*#\1#' <<< "$first_line")"
+
+              if [[ "$status_code" == "200" ]]; then
+                existing_path="$candidate"
+                break
+              elif [[ "$status_code" != "404" ]]; then
+                inspection_failed="true"
+                echo "- Could not safely inspect **$repo** (HTTP status: ${status_code:-unknown}); no changes made." >> "$summary"
+                break
+              fi
+            done
+
+            if [[ "$inspection_failed" == "true" ]]; then
+              continue
+            fi
+
+            if [[ -n "$existing_path" ]]; then
+              echo "- Conflict: **$repo** already contains `$existing_path`. No changes made." >> "$summary"
+              continue
+            fi
+
+            encoded_content="$(base64 -w 0 "$license_source")"
+            if gh api --method PUT "repos/$repo/contents/LICENSE" \
+              -f message="Add 128x64 $license_label repository license" \
+              -f content="$encoded_content" \
+              -f branch="$default_branch" >/dev/null; then
+              echo "- Added the **$license_label** license to **$repo**." >> "$summary"
+            else
+              echo "- Failed to add the license to **$repo**. Check branch protection and App permissions." >> "$summary"
+            fi
+          done <<< "$repos"
