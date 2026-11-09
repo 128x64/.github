@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://placehold.co/256x256/0b1020/8b5cf6?text=128x64" width="160" alt="128x64 Organization Logo">
+</p>
+
 # 128x64
 
 ### BUILDING WHAT'S NEXT.
@@ -13,6 +17,24 @@ We build technology, develop digital products, and explore ideas that make compu
 **Technology built with purpose. Progress built over time.**
 
 *Independent thinking. Practical technology. Long-term ambition.*
+
+## Featured Project — Harbor CLI
+
+<p align="center">
+  <img src="https://placehold.co/120x120/111827/8b5cf6?text=HARBOR" width="100" alt="Harbor CLI Placeholder Icon">
+</p>
+
+**Harbor CLI** is the flagship project of 128x64.
+
+Explore its source code, development, documentation, and project updates through the official repository.
+
+<p align="center">
+  <a href="https://github.com/128x64/harbor-cli">
+    <img src="https://img.shields.io/badge/Explore%20Harbor%20CLI-Repository-7c3aed?style=for-the-badge&logo=github&logoColor=white" alt="Explore Harbor CLI Repository">
+  </a>
+</p>
+
+---
 
 ## Welcome to 128x64
 
@@ -32,14 +54,14 @@ Our approach is built around experimentation, engineering, continuous improvemen
   <tr>
     <!-- PROFILE CARD 1 -->
     <td width="33%" valign="top">
-      <img src="https://github.com" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
+      <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
       <h3 align="center"><a href="https://github.com/Raphael-Varghese">Raphael Varghese</a></h3>
       <p align="center"><strong>Owner · Shareholder · Cofounder</strong></p>
       <hr>
       <ul>
         <li>CoLeader of x64.AI</li>
-        <li>CoLeader of 128x64 Hosting</li>
-        <li>Leader of 128x Gaming</li>
+        <li>CoLeader of 128x CLOUD</li>
+        <li>Leader of 128x PLAY</li>
         <li>Department of Cybersecurity</li>
         <li>Department of AI Fine-Tuning</li>
         <li>Coowner of Department of AI Inferencing</li>
@@ -49,7 +71,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
     </td>
     <!-- PROFILE CARD 2 -->
     <td width="33%" valign="top">
-      <img src="https://github.com" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+      <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
@@ -61,13 +83,13 @@ Our approach is built around experimentation, engineering, continuous improvemen
     </td>
     <!-- PROFILE CARD 3 -->
     <td width="33%" valign="top">
-      <img src="https://placeholders.dev" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharvo Rai">
+      <img src="https://placehold.co/100x100/111827/06b6d4?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharvo Rai">
       <h3 align="center">Atharvo Rai</h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
       <ul>
         <li>CoLeader of x64.AI</li>
-        <li>CoLeader of 128x64 Hosting</li>
+        <li>CoLeader of 128x CLOUD</li>
         <li>Coowner of Department of AI Inferencing</li>
       </ul>
     </td>
@@ -95,6 +117,11 @@ We aim to:
 ---
 
 ### x64.AI
+
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/a855f7?text=AI" width="88" alt="x64.AI Placeholder Icon">
+</p>
+
 #### Artificial Intelligence · Research · Intelligent Software
 
 x64.AI is the artificial intelligence division of 128x64. Its focus is the research, development, and practical application of intelligent software and AI-powered technologies.
@@ -119,10 +146,15 @@ Learn more through the organization's public repositories as projects become ava
 
 ---
 
-### 128x64 Hosting
+### 128x CLOUD
+
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/06b6d4?text=CLOUD" width="88" alt="128x CLOUD Placeholder Icon">
+</p>
+
 #### Web Hosting · Cloud Infrastructure · Developer Services
 
-128x64 Hosting is the infrastructure and hosting division of 128x64.
+128x CLOUD is the infrastructure and hosting division of 128x64.
 
 Websites, applications, APIs, online communities, and digital services all depend on infrastructure that works reliably. This division is focused on exploring and developing hosting and infrastructure services that help people put their projects online and keep them operating.
 
@@ -138,16 +170,21 @@ Websites, applications, APIs, online communities, and digital services all depen
 
 **Our direction**
 
-128x64 Hosting aims to make dependable infrastructure easier to understand and use. The long-term goal is to provide services that help developers, creators, and organizations operate their digital projects with confidence.
+128x CLOUD aims to make dependable infrastructure easier to understand and use. The long-term goal is to provide services that help developers, creators, and organizations operate their digital projects with confidence.
 
 Service availability, supported features, and operational commitments will be documented when individual services are released.
 
 ---
 
-### 128x Gaming
+### 128x PLAY
+
+<p align="center">
+  <img src="https://placehold.co/96x96/111827/3b82f6?text=PLAY" width="88" alt="128x PLAY Placeholder Icon">
+</p>
+
 #### Games · Interactive Experiences · Gaming Technology
 
-128x Gaming is the gaming and interactive entertainment division of 128x64.
+128x PLAY is the gaming and interactive entertainment division of 128x64.
 
 Gaming brings together software engineering, design, storytelling, creativity, and communities. This division focuses on exploring and developing digital experiences that are enjoyable to use, technically interesting, and built with players in mind.
 
@@ -163,10 +200,9 @@ Gaming brings together software engineering, design, storytelling, creativity, a
 
 **Our direction**
 
-128x Gaming aims to build a portfolio of gaming projects and supporting technology. We want to create experiences that are worth playing and tools that make game development and participation more approachable.
+128x PLAY aims to build a portfolio of gaming projects and supporting technology. We want to create experiences that are worth playing and tools that make game development and participation more approachable.
 
 ---
-
 
 ## One Company. Multiple Areas of Innovation.
 
@@ -329,5 +365,6 @@ The best way to follow our work is through our public GitHub organization.
 
 For project-specific questions, feedback, or contribution information, use the communication channels listed in the relevant repository.
 
+---
 
 <sub>© 128x64 · All rights reserved where applicable. Individual projects may be distributed under their own licenses.</sub>
