@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128x64PLACEHOLDER.png" width="160" alt="128x64 Organization Logo">
+  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/ico.png" width="160" alt="128x64 Organization Logo">
 </p>
 
 # 128x64
