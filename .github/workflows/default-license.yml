@@ -1,10 +1,9 @@
 name: Apply 128x64 Organization License Policy
 
 on:
-  # Run manually while the GitHub App is being configured.
-  # Add a 15-minute schedule after LICENSE_BOT_APP_ID and
-  # LICENSE_BOT_PRIVATE_KEY have been added as repository secrets.
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: read
@@ -22,9 +21,9 @@ jobs:
 
       - name: Create an organization-scoped GitHub App token
         id: app-token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ secrets.LICENSE_BOT_APP_ID }}
+          client-id: ${{ vars.LICENSE_BOT_CLIENT_ID }}
           private-key: ${{ secrets.LICENSE_BOT_PRIVATE_KEY }}
           owner: 128x64
           permission-contents: write
@@ -39,14 +38,14 @@ jobs:
           summary="$GITHUB_STEP_SUMMARY"
           echo "## 128x64 license policy scan" >> "$summary"
           echo "" >> "$summary"
-          echo "Existing license files are never overwritten. Forks and archived repositories are skipped." >> "$summary"
+          echo "Public repositories receive Public_LICENSE.md; private repositories receive Internal_LICENSE.md. Existing license files are never overwritten." >> "$summary"
           echo "" >> "$summary"
 
           repos="$(gh api --paginate 'orgs/128x64/repos?per_page=100&type=all' \
             --jq '.[] | [.full_name, .visibility, (.fork|tostring), (.archived|tostring), .default_branch] | @tsv')"
 
           if [[ -z "$repos" ]]; then
-            echo "No repositories were returned. Check that the GitHub App is installed across the organization." >> "$summary"
+            echo "No repositories were returned. Check that the App is installed on all 128x64 repositories." >> "$summary"
             exit 0
           fi
 
@@ -71,35 +70,25 @@ jobs:
               license_source="licenses/Public_LICENSE.md"
               license_label="Public"
             else
-              # Private and GitHub Enterprise internal repositories use the restricted license.
               license_source="licenses/Internal_LICENSE.md"
               license_label="Internal"
             fi
 
-            existing_path=""
-            inspection_failed="false"
-
-            for candidate in LICENSE LICENSE.md LICENSE.txt COPYING COPYING.md; do
-              endpoint="repos/$repo/contents/$candidate"
-              first_line="$(gh api --include "$endpoint" 2>/dev/null | sed -n '1p' || true)"
-              status_code="$(sed -E 's#^HTTP/[0-9.]+ ([0-9]{3}).*#\1#' <<< "$first_line")"
-
-              if [[ "$status_code" == "200" ]]; then
-                existing_path="$candidate"
-                break
-              elif [[ "$status_code" != "404" ]]; then
-                inspection_failed="true"
-                echo "- Could not safely inspect **$repo** (HTTP status: ${status_code:-unknown}); no changes made." >> "$summary"
-                break
-              fi
-            done
-
-            if [[ "$inspection_failed" == "true" ]]; then
+            if ! root_listing="$(gh api "repos/$repo/contents")"; then
+              echo "- Could not safely inspect **$repo**. No changes made." >> "$summary"
               continue
             fi
 
-            if [[ -n "$existing_path" ]]; then
-              echo "- Conflict: **$repo** already contains `$existing_path`. No changes made." >> "$summary"
+            existing_licenses="$(jq -r '
+              [.[] | select(.type == "file")
+               | select(.name | test("^(LICENSE|LICENCE|COPYING)(\\.|$|-)|^UNLICENSE$"; "i"))
+               | .name] | .[]
+            ' <<< "$root_listing")"
+
+            if [[ -n "$existing_licenses" ]]; then
+              while IFS= read -r existing_path; do
+                [[ -n "$existing_path" ]] && echo "- Conflict: **$repo** already contains `$existing_path`. No changes made." >> "$summary"
+              done <<< "$existing_licenses"
               continue
             fi
 
@@ -110,6 +99,6 @@ jobs:
               -f branch="$default_branch" >/dev/null; then
               echo "- Added the **$license_label** license to **$repo**." >> "$summary"
             else
-              echo "- Failed to add the license to **$repo**. Check branch protection and App permissions." >> "$summary"
+              echo "- Failed to add a license to **$repo**. Check App permissions and branch protection." >> "$summary"
             fi
           done <<< "$repos"
