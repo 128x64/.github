@@ -53,7 +53,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
 <table>
   <tr>
     <!-- PROFILE CARD 1 -->
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
       <h3 align="center"><a href="https://github.com/Raphael-Varghese">Raphael Varghese</a></h3>
       <p align="center"><strong>Owner · Shareholder · Cofounder</strong></p>
@@ -70,7 +70,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
       </ul>
     </td>
     <!-- PROFILE CARD 2 -->
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
@@ -82,7 +82,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
       </ul>
     </td>
     <!-- PROFILE CARD 3 -->
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
