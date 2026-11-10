@@ -74,8 +74,8 @@ jobs:
               continue
             fi
 
-            if [[ "$is_fork" == "true" || "$is_archived" == "true" ]]; then
-              echo "- Skipped **$repo** (fork or archived repository)." >> "$summary"
+            if [[ "$is_archived" == "true" ]]; then
+              echo "- Skipped **$repo** (archived repository; GitHub does not allow normal writes)." >> "$summary"
               continue
             fi
 
