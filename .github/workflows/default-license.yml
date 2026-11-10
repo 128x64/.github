@@ -111,7 +111,7 @@ jobs:
             fi
 
             encoded_content="$(base64 -w 0 "$license_source")"
-            if gh api --method PUT "repos/$repo/contents/LICENSE" \
+            if gh api --method PUT "repos/$repo/contents/LICENSE.md" \
               -f message="Add 128x64 $license_label repository license" \
               -f content="$encoded_content" \
               -f branch="$default_branch" >/dev/null; then
