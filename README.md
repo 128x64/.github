@@ -14,6 +14,10 @@ GitHub uses the supported default community health files in this repository for 
 
 Harbor CLI is the flagship product of 128x64; the organization also develops other products and projects.
 
+## Divisions
+
+See [DIVISIONS.md](DIVISIONS.md) for the division structure, current repository assignments, and organization-wide repositories.
+
 ## Shared policies
 
 - [Code of Conduct](CODE_OF_CONDUCT.md)
