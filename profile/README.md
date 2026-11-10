@@ -53,12 +53,16 @@ Our approach is built around experimentation, engineering, continuous improvemen
 <table>
   <tr>
     <!-- PROFILE CARD 1 -->
-    <td width="33%" valign="top" align="center">
-      <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
+    <td width="33%" valign="top">
+      <!-- Centering wrapper for strict layout engines -->
+      <div align="center">
+        <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
+      </div>
       <h3 align="center"><a href="https://github.com/Raphael-Varghese">Raphael Varghese</a></h3>
       <p align="center"><strong>Owner · Shareholder · Cofounder</strong></p>
       <hr>
-      <ul>
+      <!-- Unset any inherited centering for the list -->
+      <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>CoLeader of 128x CLOUD</li>
         <li>Leader of 128x PLAY</li>
@@ -69,25 +73,31 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
+
     <!-- PROFILE CARD 2 -->
-    <td width="33%" valign="top" align="center">
-      <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+    <td width="33%" valign="top">
+      <div align="center">
+        <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+      </div>
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
-      <ul>
+      <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>Coowner of Department of AI Research</li>
         <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
+
     <!-- PROFILE CARD 3 -->
-    <td width="33%" valign="top" align="center">
-      <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
+    <td width="33%" valign="top">
+      <div align="center">
+        <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
+      </div>
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
-      <ul>
+      <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>CoLeader of 128x CLOUD</li>
         <li>Coowner of Department of AI Inferencing</li>
@@ -95,6 +105,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
     </td>
   </tr>
 </table>
+
 
 ## Our Mission
 
