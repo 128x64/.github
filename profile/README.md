@@ -73,8 +73,6 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
-
-    <!-- PROFILE CARD 2 -->
     <td width="33%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
@@ -88,8 +86,6 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
-
-    <!-- PROFILE CARD 3 -->
     <td width="33%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
@@ -105,6 +101,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
     </td>
   </tr>
 </table>
+
 
 
 ## Our Mission
