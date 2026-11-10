@@ -83,8 +83,8 @@ Our approach is built around experimentation, engineering, continuous improvemen
     </td>
     <!-- PROFILE CARD 3 -->
     <td width="33%" valign="top">
-      <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/513.jpg" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
-      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
+      <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
+      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
       <ul>
