@@ -21,7 +21,22 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Check whether the License Bot is configured
+        id: app-config
+        shell: bash
+        env:
+          APP_CLIENT_ID: ${{ vars.LICENSE_BOT_CLIENT_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.LICENSE_BOT_PRIVATE_KEY }}
+        run: |
+          if [[ -n "$APP_CLIENT_ID" && -n "$APP_PRIVATE_KEY" ]]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "License Bot setup is incomplete. Add LICENSE_BOT_CLIENT_ID and LICENSE_BOT_PRIVATE_KEY to enable deployment." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Create an organization-scoped GitHub App token
+        if: steps.app-config.outputs.ready == 'true'
         id: app-token
         uses: actions/create-github-app-token@v3
         with:
@@ -31,6 +46,7 @@ jobs:
           permission-contents: write
 
       - name: Apply visibility-based licenses without overwriting
+        if: steps.app-config.outputs.ready == 'true'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         shell: bash
