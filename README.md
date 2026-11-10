@@ -42,6 +42,10 @@ GitHub does not provide organization-wide default LICENSE files. Each project re
 
 These license texts should receive qualified legal review before commercial reliance.
 
+## Infrastructure
+
+See [INFRASTRUCTURE.md](INFRASTRUCTURE.md) for shared repository security, GitHub Actions, backup/recovery, and release standards.
+
 ## Automation
 
 - [Apply Organization License Policy](.github/workflows/default-license.yml) scans the organization every 15 minutes and can also be run manually. It requires the 128x64 License Bot GitHub App.
