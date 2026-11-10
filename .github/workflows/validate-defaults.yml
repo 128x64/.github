@@ -1,0 +1,61 @@
+name: Validate Organization Defaults
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify required organization files
+        shell: bash
+        run: |
+          set -euo pipefail
+          required=(
+            CODE_OF_CONDUCT.md
+            CONTRIBUTING.md
+            GOVERNANCE.md
+            SECURITY.md
+            SUPPORT.md
+            PULL_REQUEST_TEMPLATE.md
+            .github/ISSUE_TEMPLATE/bug_report.md
+            .github/ISSUE_TEMPLATE/feature_request.md
+            licenses/Public_LICENSE.md
+            licenses/Internal_LICENSE.md
+            .github/workflows/default-license.yml
+          )
+          missing=0
+          for file in "${required[@]}"; do
+            if [[ ! -s "$file" ]]; then
+              echo "::error file=$file::Required file is missing or empty"
+              missing=1
+            else
+              echo "OK: $file"
+            fi
+          done
+          exit "$missing"
+
+      - name: Ensure obsolete community directory is removed
+        shell: bash
+        run: |
+          if [[ -d community ]]; then
+            echo "::error::Move default community health files to the repository root and issue templates to .github/ISSUE_TEMPLATE/."
+            exit 1
+          fi
+
+      - name: Parse workflow YAML files
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            ruby -e 'require "yaml"; YAML.parse_file(ARGV.fetch(0)); puts "YAML OK: #{ARGV.fetch(0)}"' "$file"
+          done < <(find .github/workflows -type f \( -name '*.yml' -o -name '*.yaml' \) -print0)
