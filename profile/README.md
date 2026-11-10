@@ -297,7 +297,7 @@ Before contributing, please review the license, contribution guidelines, and pro
 2. Read the README and documentation for a project that interests you.
 3. Check its issues and contribution guidelines.
 4. Share feedback or contribute where participation is welcome.
-5. For any inquries relating to becoming a part of this, please email the owner at [Raphael Varghese Gmail](mailto:raphaelcvarghese@gmail.com)
+5. For any inquiries relating to becoming a part of this, please email the owner at [Raphael Varghese Gmail](mailto:raphaelcvarghese@gmail.com)
 
 Please keep discussions respectful, specific, and constructive.
 
