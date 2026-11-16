@@ -40,7 +40,7 @@ Explore its source code, development, documentation, and project updates through
 
 **128x64** is a technology company focused on the development of **software**, **digital platforms**, **infrastructure**, and **emerging technologies**.
 
-Our work spans multiple areas of the technology industry, bringing together different disciplines under one organization. From artificial intelligence and intelligent software to gaming experiences and hosting infrastructure, we aim to create products and services that solve meaningful problems and deliver practical value.
+Our work spans multiple areas of the technology industry, bringing together different disciplines under one organization. From artificial intelligence and intelligent software to hosting infrastructure, we aim to create products and services that solve meaningful problems and deliver practical value.
 
 We believe technology should do more than demonstrate what is possible. It should help people accomplish things, give developers better tools, make digital experiences more accessible, and provide dependable foundations for the services people rely on.
 
@@ -52,20 +52,16 @@ Our approach is built around experimentation, engineering, continuous improvemen
 
 <table>
   <tr>
-    <!-- PROFILE CARD 1 -->
-    <td width="33%" valign="top">
-      <!-- Centering wrapper for strict layout engines -->
+    <td width="25%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
       </div>
       <h3 align="center"><a href="https://github.com/Raphael-Varghese">Raphael Varghese</a></h3>
       <p align="center"><strong>Owner · Shareholder · Cofounder</strong></p>
       <hr>
-      <!-- Unset any inherited centering for the list -->
       <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>CoLeader of 128x CLOUD</li>
-        <li>Leader of 128x PLAY</li>
         <li>Department of Cybersecurity</li>
         <li>Department of AI Fine-Tuning</li>
         <li>Coowner of Department of AI Inferencing</li>
@@ -73,30 +69,44 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <div align="center">
-        <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+        <img src="https://placehold.co/100x100/111827/3b82f6?text=MK" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Mikhail Kozeev">
       </div>
-      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
-      <p align="center"><strong>Shareholder · Cofounder</strong></p>
-      <hr>
-      <ul style="text-align: left;">
-        <li>CoLeader of x64.AI</li>
-        <li>Coowner of Department of AI Research</li>
-        <li>Coowner of Department of AI Training</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <div align="center">
-        <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
-      </div>
-      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
+      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Mikhail Kozeev</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
       <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>CoLeader of 128x CLOUD</li>
-        <li>Coowner of Department of AI Inferencing</li>
+        <li>Coowner of Department of AI Research</li>
+        <li>Coowner of Department of AI Training</li>
+      </ul>
+    </td>
+    <td width="25%" valign="top">
+      <div align="center">
+        <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
+      </div>
+      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
+      <p align="center"><strong>Shareholder · Cofounder · Volunteer</strong></p>
+      <hr>
+      <ul style="text-align: left;">
+        <li>CoLeader of x64.AI</li>
+        <li>Volunteer coowner of Department of AI Research</li>
+        <li>Volunteer coowner of Department of AI Training</li>
+      </ul>
+    </td>
+    <td width="25%" valign="top">
+      <div align="center">
+        <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
+      </div>
+      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
+      <p align="center"><strong>Shareholder · Cofounder · Volunteer</strong></p>
+      <hr>
+      <ul style="text-align: left;">
+        <li>Volunteer coleader of x64.AI</li>
+        <li>Volunteer coleader of 128x CLOUD</li>
+        <li>Volunteer coowner of Department of AI Inferencing</li>
       </ul>
     </td>
   </tr>
