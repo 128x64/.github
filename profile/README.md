@@ -100,7 +100,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
       <div align="center">
         <img src="https://placehold.co/100x100/111827/8b5cf6?text=AR" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Atharva Rai">
       </div>
-      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Atharva Rai</a></h3>
+      <h3 align="center"><a href="https://github.com/atharvarai30">Atharva Rai</a></h3>
       <p align="center"><strong>Shareholder · Cofounder · Volunteer</strong></p>
       <hr>
       <ul style="text-align: left;">
