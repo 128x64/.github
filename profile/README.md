@@ -66,7 +66,6 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Department of AI Fine-Tuning</li>
         <li>Coowner of Department of AI Inferencing</li>
         <li>Coowner of Department of AI Research</li>
-        <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
     <td width="25%" valign="top">
@@ -80,7 +79,6 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>CoLeader of x64.AI</li>
         <li>CoLeader of 128x CLOUD</li>
         <li>Coowner of Department of AI Research</li>
-        <li>Coowner of Department of AI Training</li>
       </ul>
     </td>
     <td width="25%" valign="top">
@@ -93,7 +91,8 @@ Our approach is built around experimentation, engineering, continuous improvemen
       <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
         <li>Volunteer coowner of Department of AI Research</li>
-        <li>Volunteer coowner of Department of AI Training</li>
+        <li>Owner and founder of AI Inferencing Department</li>
+        <li>Manager of Cloud Compute and AI Department</li>
       </ul>
     </td>
     <td width="25%" valign="top">
