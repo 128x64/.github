@@ -73,7 +73,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=MK" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Mikhail Kozeev">
       </div>
-      <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Mikhail Kozeev</a></h3>
+      <h3 align="center"><a href="https://github.com/Suncofye">Mikhail Kozeev</a></h3>
       <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
       <ul style="text-align: left;">
