@@ -190,6 +190,8 @@ Websites, applications, APIs, online communities, and digital services all depen
 
 128x CLOUD aims to make dependable infrastructure easier to understand and use. The long-term goal is to provide services that help developers, creators, and organizations operate their digital projects with confidence.
 
+---
+
 Service availability, supported features, and operational commitments will be documented when individual services are released.
 ---
 
