@@ -191,35 +191,6 @@ Websites, applications, APIs, online communities, and digital services all depen
 128x CLOUD aims to make dependable infrastructure easier to understand and use. The long-term goal is to provide services that help developers, creators, and organizations operate their digital projects with confidence.
 
 Service availability, supported features, and operational commitments will be documented when individual services are released.
-
----
-
-### 128x PLAY
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/128x64/.github/refs/heads/main/images/128xPLAY.png" width="160" alt="128x PLAY Placeholder Icon">
-</p>
-
-#### Games · Interactive Experiences · Gaming Technology
-
-128x PLAY is the gaming and interactive entertainment division of 128x64.
-
-Gaming brings together software engineering, design, storytelling, creativity, and communities. This division focuses on exploring and developing digital experiences that are enjoyable to use, technically interesting, and built with players in mind.
-
-**Areas of focus**
-
-- **Game development** — Creating original games and interactive projects across different genres and platforms.
-- **Game technology** — Exploring the software, systems, tools, and technical foundations used to build gaming experiences.
-- **Player experiences** — Prioritizing usability, performance, accessibility, and thoughtful design.
-- **Community projects** — Supporting communities around games, development projects, and shared interests.
-- **Modding and customization** — Exploring ways to extend, customize, and experiment with supported gaming experiences while respecting the rights and licenses of original creators.
-- **Tools for creators** — Developing utilities and workflows that can help developers and creators build and manage projects.
-- **Performance and compatibility** — Working toward smooth, reliable experiences across supported devices and environments.
-
-**Our direction**
-
-128x PLAY aims to build a portfolio of gaming projects and supporting technology. We want to create experiences that are worth playing and tools that make game development and participation more approachable.
-
 ---
 
 ## One Company. Multiple Areas of Innovation.
