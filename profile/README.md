@@ -81,6 +81,8 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Research</li>
       </ul>
     </td>
+    <!-- Commented out due to VISA concerns. -->
+    <!--
     <td width="25%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
@@ -108,6 +110,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Volunteer coowner of Department of AI Inferencing</li>
       </ul>
     </td>
+    -->
   </tr>
 </table>
 
