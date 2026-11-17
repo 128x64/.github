@@ -52,7 +52,8 @@ Our approach is built around experimentation, engineering, continuous improvemen
 
 <table>
   <tr>
-    <td width="25%" valign="top">
+    <!-- change back to 25% once VISA concerns finish -->
+    <td width="50%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
       </div>
@@ -68,7 +69,8 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Research</li>
       </ul>
     </td>
-    <td width="25%" valign="top">
+    <!-- change back to 25% once VISA concerns finish -->
+    <td width="50%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=MK" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Mikhail Kozeev">
       </div>
