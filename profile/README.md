@@ -41,7 +41,6 @@ From artificial intelligence and intelligent software to hosting infrastructure,
 Our approach is built around experimentation, engineering, continuous improvement, and a long-term commitment to useful technology. 128x64 brings these ambitions together through specialized divisions, each with its own area of focus and development direction.
 
 ## 👥 Leaders
-## 👥 Leaders
 
 <table width="100%">
   <tr>
