@@ -41,11 +41,11 @@ From artificial intelligence and intelligent software to hosting infrastructure,
 Our approach is built around experimentation, engineering, continuous improvement, and a long-term commitment to useful technology. 128x64 brings these ambitions together through specialized divisions, each with its own area of focus and development direction.
 
 ## 👥 Leaders
+## 👥 Leaders
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <!-- change back to width="250" once VISA concerns finish -->
       <div align="center">
         <img src="https://placehold.co/100x100/111827/8b5cf6?text=RV" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Raphael Varghese">
       </div>
@@ -59,8 +59,6 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Research</li>
       </ul>
     </td>
-    
-    <!-- change back to 25% once VISA concerns finish -->
     <td width="50%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=MK" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Mikhail Kozeev">
@@ -74,9 +72,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <li>Coowner of Department of AI Research</li>
       </ul>
     </td>
-    
-    <!-- Commented out due to VISA concerns. -->
-    <!--
+    <!-- Commented out due to VISA concerns. When uncommenting, change both 50% cells above to 25%.
     <td width="25%" valign="top">
       <div align="center">
         <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
