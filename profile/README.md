@@ -50,7 +50,7 @@ Our approach is built around experimentation, engineering, continuous improvemen
 
 ## 👥 Leaders
 
-<table>
+<table width="100%">
   <tr>
     <!-- change back to 25% once VISA concerns finish -->
     <td width="50%" valign="top">
@@ -90,12 +90,12 @@ Our approach is built around experimentation, engineering, continuous improvemen
         <img src="https://placehold.co/100x100/111827/3b82f6?text=SP" width="100" style="border-radius: 50%; display: block; margin: 0 auto 10px;" alt="Sai Peddada">
       </div>
       <h3 align="center"><a href="https://github.com/Ihaterbrrjdn">Sai Peddada</a></h3>
-      <p align="center"><strong>Shareholder · Cofounder · Volunteer</strong></p>
+      <p align="center"><strong>Shareholder · Cofounder</strong></p>
       <hr>
       <ul style="text-align: left;">
         <li>CoLeader of x64.AI</li>
-        <li>Volunteer coowner of Department of AI Research</li>
-        <li>Owner and founder of AI Inferencing Department</li>
+        <li>Coowner of Department of AI Research</li>
+        <li>Owner and Cofounder of AI Inferencing Department</li>
         <li>Manager of Cloud Compute and AI Department</li>
       </ul>
     </td>
@@ -107,9 +107,9 @@ Our approach is built around experimentation, engineering, continuous improvemen
       <p align="center"><strong>Shareholder · Cofounder · Volunteer</strong></p>
       <hr>
       <ul style="text-align: left;">
-        <li>Volunteer coleader of x64.AI</li>
-        <li>Volunteer coleader of 128x CLOUD</li>
-        <li>Volunteer coowner of Department of AI Inferencing</li>
+        <li>Coleader of x64.AI</li>
+        <li>Coleader of 128x CLOUD</li>
+        <li>Coowner of Department of AI Inferencing</li>
       </ul>
     </td>
     -->
