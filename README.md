@@ -4,7 +4,7 @@ This repository is the central home for our shared GitHub community health files
 
 ## Organization
 
-We operates across three divisions:
+We operate across two divisions:
 
 - **x64.AI**
 - **128x CLOUD**
