@@ -19,6 +19,7 @@ The organization is led by its owner and administrators.
 ### Organization Owner
 
 **Raphael Varghese**
+
 **Sai Peddada**
 
 The organization owner has final authority over organization-wide decisions, including:
@@ -34,10 +35,10 @@ The organization owner has final authority over organization-wide decisions, inc
 
 The following individuals are recognized as organization administrators:
 
-1. Raphael Varghese — Owner and Administrator
-2. Sai Peddada —  Owner and Administrator
-3. Atharva Rai — Administrator
-4. Misha Kozeev — Administrator
+1. Raphael Varghese — Founder, Owner, and Administrator
+2. Sai Peddada —  Cofounder, Coowner, and Administrator
+3. Atharva Rai — Cofounder and Administrator
+4. Misha Kozeev — Cofounder and Administrator
 
 Administrators help manage the organization, repositories, members, and maintainers.
 
